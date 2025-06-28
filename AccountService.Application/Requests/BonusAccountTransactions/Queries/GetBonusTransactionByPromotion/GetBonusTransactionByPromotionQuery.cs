@@ -1,0 +1,6 @@
+using AccountService.Infrastructure.WalletApi.Models.Requests.BonusAccounts;
+using MediatR;
+
+namespace AccountService.Application.Requests.BonusAccountTransactions.Queries.GetBonusTransactionByPromotion;
+
+public record GetBonusTransactionByPromotionQuery(BonusAccountByPromotionRequest Data) : IRequest<BonusAccountTransactionPromotionVm>;
